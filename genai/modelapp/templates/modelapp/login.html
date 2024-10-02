@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsumeWise</title>
+    <link rel="stylesheet" href="{% static 'modelapp/login.css' %}">
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+        <h1 class="logo">ConsumeWise</h1>
+        <form method="post">
+          {% csrf_token %}
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit" class="new">Log In</button>
+           
+        </form>
+        <div class="signup-box">
+          <p>New user? <a href="{% url 'signup' %}">Sign up</a></p>
+      </div>
+      {% for message in messages %}
+      <p>{{ message }}</p>
+      {%endfor%}
+        <div class="separator">
+  </div>
+</body>
+</html>
