@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="{% static 'modelapp/profile.css'%}" />
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a href="{% url 'home' %}" class="back-icon"><i class='bx bx-arrow-back'></i></a>
+  <div class="profile-container">
+    <div class="profile">
+      <h1 class="profile-header">User Profile</h1>
+    </div>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="{% static 'modelapp/profile-pic.avif' %}" alt="User Profile Picture" class="profile-pic">
+        <div class="detail-item">
+            <p><strong>Username:</strong> <span id="username">{{user.username}}</span></p>
+            <p><strong>Age:</strong> <span id="age">{{profile.age}}</span></p>
+          </div>
+      </div>
+      <div class="detail-item health-info">
+        <p><strong>Health Details:</strong></p>
+        <p>Diabetes: <span id="diabetes-status">{{profile.diabetes}}</span></p>
+        <p>Blood Pressure: <span id="bp-status">{{profile.blood_pressure}}</span></p>
+        <p>Additional Problems: <span id="problems">{{profile.problemsInput}}</span></p>
+      </div>
+      <button class="edit-btn" onclick="openForm()">Update Data</button>
+    </div>
+  </div>
+
+  <!-- Pop-up Form for Health Details -->
+  <div id="popupForm" class="popup-form-container">
+    <div class="popup-form">
+      <h2>Health Details</h2>
+      <form method="post" id="healthForm">
+        {% csrf_token %}
+        <label for="diabetes">Do you have diabetes?</label>
+        <select id="diabetes" name="diabetes" required>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+
+        <label for="bp">Do you have blood pressure issues?</label>
+        <select id="bp" name="bp" required>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+
+        <label for="problems">Any additional health issues?</label>
+        <textarea id="problemsInput" name="problemsInput" rows="3" placeholder="Describe any other health problems/Allergies"></textarea>
+
+        <div class="button-container">
+          <button type="submit" class="save-btn">Save Details</button>
+          <button type="button" class="cancel-btn" onclick="closeForm()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function openForm() {
+      document.getElementById("popupForm").style.display = "flex";
+    }
+    
+    function closeForm() {
+      document.getElementById("popupForm").style.display = "none";
+    }
+
+    // Remove JS interference with the form submission
+    document.getElementById('healthForm').addEventListener('submit', function() {
+      closeForm(); // Close the form after submission
+    });
+  </script>
+</body>
+</html>
