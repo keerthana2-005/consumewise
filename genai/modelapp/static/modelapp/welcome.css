@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800');
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"poppins",sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background:rgb(229, 223, 223);
+    color: black;
+
+}
+section{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:80px 100px;
+    color:white;
+
+}
+.container{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+
+}
+.main-title{
+    font-size: 4em;
+    margin-bottom:50px;
+}
+.main-title:hover{
+    transform:scale(1.05);
+    color:rgb(113, 18, 20);
+    box-shadow:0 10px 20px rgba(41, 23, 23, 0.2);
+}
+.content{
+    position:relative;
+    width:1150px;
+    display:flex;
+    justify-content:center;
+    align-items:center
+   ;
+}
+.content .image{
+    position:relative;
+    width:1000px;
+    height:400px;
+    overflow:hidden;
+}
+.content.image img{
+    z-index:111;
+    position:absolute;
+    top:0;
+    left:0;
+    width:500%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+}
+.content .text-box{
+    z-index:222;
+    background-color:rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    padding:80px;
+    max-width:560px;
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:10px;
+    transform:translate(-80px,50px);
+
+}
+
+.content .text-box h3{
+    font-size: 2em;
+    margin-top: 10px;
+    color:black;
+
+}
+.content .info{
+    z-index:222;
+    background-color:rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    padding:60px;
+    max-width:500px;
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:10px;
+    transform:translate(-80px,50px);
+
+}
+media-icons{
+    margin-top:100px;
+}
+.media-icon a{
+    color:#fff;
+    font-size:2em;
+    margin:60px;
+}
+.section-title{
+    font-size:3em;
+    margin-bottom:80px;
+}
+.info-title{
+    font-size:1.8em;
+    margin-bottom:10px;
+}
+.info{
+    width:700px;
+    margin-left:50px;
+}
+
+.media-info{
+    width:400px;
+    margin-left:50px;
+
+}
+.media-info li{
+    list-style:none;
+    font-size:1.4em;
+}
+.media-info li a{
+    color:#fff;
+    text-decoration:none;
+}
+.media-info li:not(:last-child){
+margin-bottom:50px;
+}
+.media-info li:nth-child(1), .media-info li:nth-child(4){
+    padding-left:100px;
+
+}
+.media-info li:nth-child(2), .media-info li:nth-child(3){
+    padding-left:50px;
+
+}
+.sec-03{
+    margin-bottom:100px;
+    text-align: left;
+    justify-content: left;
+}
+.a{
+    font-size: 3em;
+   text-align: left;
+
+}
+.btn button {
+    font-size: 24px;      /* Increases the font size */
+    padding: 15px 30px;   /* Increases the padding for better appearance */
+    border-radius: 10px;  /* Adds rounded corners for a more modern look */
+    cursor: pointer;      /* Changes cursor to pointer on hover */
+    background-color:#007bff; /* Optional: Adds a vibrant background color */
+    color: white;         /* Ensures the text color is visible */
+    border: none;    
+         /* Removes the default button border */
+}
+
+.btn button:hover {
+    background-color: #1938e6; 
+    box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.7); 
+    /* Darkens the button on hover */
+}
+.btn{
+    padding-left:600px;
+    border: none;
+    letter-spacing: 0.1rem;
+   
+}
+
+/* for login */
+
+
+
+
+.buttonn{
+    position: relative;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    color: #5c4800;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.buttonn:hover{
+    letter-spacing: 0.1rem;
+}
+
+#newsLetter{    
+    position: fixed;
+    top: -100%;
+    left: 50%; 
+    transform: translate(-50%,-50%); 
+    background-color: #fff;
+    z-index: 1000;
+    width: 450px;
+    padding: 80px 50px 50px;
+    transition: 0.5s;
+    border-radius: 4px;
+    visibility: hidden;
+
+}
+
+#newsLetter.active{
+    visibility: visible;
+    top: 50%;
+}
+
+#newsLetter h2{
+    text-align: center;
+    color: #5c4800;
+    font-size: 24px;
+    margin: 20px 10px;
+}
+
+#newsLetter p{
+    text-align: center;
+    color: #5c4800;
+}
+
+#newsLetter .box{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input, buttonn{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    outline: none;
+    font-size: 1rem;
+    font-family: serif;
+}
+
+buttonn{
+    border: none;
+    width: 150px;
+    letter-spacing: 0.1rem;
+    background-color: #7c3af8;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.closee{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 20px;
+}
+h2, h3, h4, p, .info-title, .main-title, .a {
+    color: black;
+}
