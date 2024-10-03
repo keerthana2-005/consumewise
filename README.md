@@ -65,6 +65,20 @@ Use this Link to: https://consumewiseai.pythonanywhere.com
 ### 6. Deployment:
 - **PythonAnywhere**: 
    - The application is deployed on PythonAnywhere, the Django application ensuring scalability and accessibility.
+# Future Scope
+
+1. **Enhanced AI Accuracy and Speed**:
+   - Future iterations will focus on making the AI model more accurate in identifying nutritional content and harmful ingredients. We will also enhance the processing speed, providing users with faster insights.
+
+2. **Photo Scanning for Ingredient Extraction**:
+   - A machine learning model will be integrated to scan product photos, extract text from ingredient labels using OCR (Optical Character Recognition), and automatically send the data to the AI model for analysis. This will make the process more seamless and user-friendly.
+
+3. **Multi-Modal Interface**:
+   - Different interaction modes will be added, such as speech recognition for hands-free usage and a personalized interface that remembers previous chats. This will allow users to engage with the system through voice commands and see more health details saved in their profile.
+
+4. **Personalized Health Recommendations**:
+   - Once a user’s health profile is set up, the AI model will provide personalized product recommendations based on their specific health conditions . This tailored experience will help users make better food choices aligned with their health goals.
+
 
 # Steps to Use ConsumeWise:
 
