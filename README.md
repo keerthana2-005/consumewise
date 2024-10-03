@@ -78,6 +78,8 @@ Use this Link to: https://consumewiseai.pythonanywhere.com
 
 4. **Personalized Health Recommendations**:
    - Once a user’s health profile is set up, the AI model will provide personalized product recommendations based on their specific health conditions . This tailored experience will help users make better food choices aligned with their health goals.
+5.**Keeping it up to date**:
+   -New products will be intoducing to the market frequently so keeping this up to date linking this to online grocery stores.
 
 
 # Steps to Use ConsumeWise:
