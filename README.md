@@ -42,7 +42,7 @@ Use this Link to: https://consumewiseai.pythonanywhere.com
 # Technologies Used in ConsumeWise
 
 ### 1. Frontend:
-- **HTML, JavaScript, CSS, React**: 
+- **HTML, JavaScript, CSS**: 
    - For building an interactive and responsive user interface.
    - React is utilized for dynamic components and handling complex states in the frontend.
 
