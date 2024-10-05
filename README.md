@@ -36,8 +36,7 @@ Utilizing AI to generate a comprehensive health analysis for packaged products. 
 
     
 
-You can access our website via the link on Devfolio.
-Use this Link to: https://consumewiseai.pythonanywhere.com
+You can access our website via this Link:https://consumewiseai.pythonanywhere.com
 
 # Technologies Used in ConsumeWise
 
