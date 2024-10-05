@@ -85,7 +85,7 @@ You can access our website via this Link:https://consumewiseai.pythonanywhere.co
 
 1. **Get Started**: Click on the "Get Started" button to be redirected to the login page.
 2. **Login or Sign Up**:
-   - If you're already registered, use your login credentials to sign in.
+   - If you're a registered user , use your login credentials to sign in.
    - Otherwise, you can register by creating an account on the signup page.
 3. **Edit Your Profile**:
    - After logging in, you'll be redirected to the home page.
