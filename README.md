@@ -1,66 +1,104 @@
 # ConsumeWise: AI-Driven Health Analysis
 
-ConsumeWise uses AI to analyze packaged products, providing a detailed health evaluation. It tailors insights for both general and specific user needs, helping users make healthier decisions by offering relevant nudges.
+Utilizing AI to generate a comprehensive health analysis for packaged products. This analysis can be tailored to the general public or customized based on individual user needs, providing relevant nudges for healthier decisions. The core areas covered in the analysis include:
 
-## Key Features
+### 1. Nutritional Analysis:
+- **High Presence of Unwanted Nutrients**: 
+   - Evaluates levels of fats, sugar, sodium, and calories that are ideally consumed in lower quantities.
+   - Flags products with excessive amounts of these nutrients as potential risks to health.
 
-### 1. Nutritional Health
-- Evaluates unwanted nutrients like fats, sugar, sodium, and calories.
-- Flags high levels that may pose health risks.
+### 2. Processing & Nutrient Deficiency:
+- **Degree of Processing**: 
+   - Assesses how processed the product is and its impact on nutrient retention.
+   - Flags nutrient-deficient products or those heavily reliant on artificial additives.
+  
+### 3. Harmful Ingredients:
+- **Identification of Harmful Substances**: 
+   - Scans for harmful or controversial ingredients such as trans fats, artificial preservatives, high levels of fructose corn syrup, etc.
+   - Provides a breakdown of ingredients that could have long-term health consequences.
 
-### 2. Processing & Additives
-- Analyzes the product’s degree of processing and identifies nutrient deficiencies.
-- Detects artificial additives and highlights their health impact.
+### 4. Diet Compliance:
+- **Compatibility with Popular Diets**:
+   - Cross-checks product ingredients against common dietary plans (e.g., keto, vegan, low-carb).
+   - Highlights whether the product is suitable for people following specific diets.
 
-### 3. Harmful Ingredients
-- Scans for trans fats, preservatives, and other harmful ingredients.
-- Lists long-term health risks associated with these substances.
+### 5. Diabetes & Allergen Friendliness:
+- **Special Dietary Considerations**:
+   - Identifies if the product is safe for individuals with diabetes by analyzing sugar and carb content.
+   - Flags potential allergens such as gluten, peanuts, dairy, etc., for users with food allergies.
 
-### 4. Diet Compatibility
-- Verifies if products fit popular diets like keto, vegan, or low-carb.
-- Alerts users to products unsuitable for specific diets.
+### 6. Brand Claims Verification:
+- **Validation of Product Claims**:
+   - Compares the brand's health claims against factual data.
+   - Highlights if any claims made on the packaging (e.g., "low fat," "organic") could be misleading based on the actual product content.
 
-### 5. Diabetes & Allergy-Friendly
-- Analyzes sugar and carb content for diabetic-friendly options.
-- Flags common allergens like gluten, dairy, and peanuts.
+ ![WhatsApp Image 2024-10-03 at 09 05 51_0adcc15f](https://github.com/user-attachments/assets/134761b9-64d9-47aa-b6cd-2a785a70dd52)
 
-### 6. Health Score Prediction
-- Provides an overall health score, helping users quickly assess the product’s health impact.
+    
 
-## Technologies Used
+You can access our website via this Link:https://consumewiseai.pythonanywhere.com
 
-- **Frontend**: HTML, JavaScript, CSS, React for a responsive user interface.
-- **Backend**: Python, Django for robust backend support.
-- **AI Model**: Gemini AI for generating health insights.
-- **API**: Uses OpenFoodFacts API for data.
-- **Deployment**: Hosted on PythonAnywhere for easy access.
+# Technologies Used in ConsumeWise
 
-## Future Enhancements
+### 1. Frontend:
+- **HTML, JavaScript, CSS**: 
+   - For building an interactive and responsive user interface.
+   - React is utilized for dynamic components and handling complex states in the frontend.
 
-1. **Faster, More Accurate AI**: Enhancements for better accuracy and quicker insights.
-2. **Photo-Based Product Scanning**: Use of OCR (Optical Character Recognition) to scan product labels and automate analysis.
-3. **Voice Recognition**: A hands-free interaction mode for more convenience.
-4. **Personalized Recommendations**: Custom recommendations based on users' health profiles.
+### 2. Backend:
+- **Python**: 
+   - Powers the backend logic, handling data processing and integration with AI models.
 
-## How to Use ConsumeWise
+### 3. Web Framework:
+- **Django**: 
+   - A robust and scalable web framework used for backend development, routing, and managing the database.
+
+### 4. Language:
+- **Python**: 
+   - The primary programming language used for both backend development and AI model integration.
+
+### 5. AI Model:
+- **Gemini**: 
+   - AI model leveraged for generating health analysis of products, providing insights into nutritional content, harmful ingredients, and diet compliance.
+
+### 6. Deployment:
+- **PythonAnywhere**: 
+   - The application is deployed on PythonAnywhere, the Django application ensuring scalability and accessibility.
+### 6. API: 
+   - Uses openFoodFacts API to fetch the data.
+# Future Scope
+
+1. **Enhanced AI Accuracy and Speed**:
+   - Future iterations will focus on making the AI model more accurate in identifying nutritional content and harmful ingredients. We will also enhance the processing speed, providing users with faster insights.
+
+2. **Photo Scanning for Ingredient Extraction**:
+   - A machine learning model will be integrated to scan product photos, extract text from ingredient labels using OCR (Optical Character Recognition), and automatically send the data to the AI model for analysis. This will make the process more seamless and user-friendly.
+
+3. **Multi-Modal Interface**:
+   - Different interaction modes will be added, such as speech recognition for hands-free usage and a personalized interface that remembers previous chats. This will allow users to engage with the system through voice commands and see more health details saved in their profile.
+
+4. **Personalized Health Recommendations**:
+   - Once a user’s health profile is set up, the AI model will provide personalized product recommendations based on their specific health conditions . This tailored experience will help users make better food choices aligned with their health goals.
+5.**Keeping it up to date**:
+   -New products will be intoducing to the market frequently so keeping this up to date linking this to online grocery stores.
+
+
+# Steps to Use ConsumeWise:
 
 1. **Get Started**: Click on the "Get Started" button to be redirected to the login page.
 2. **Login or Sign Up**:
-   - If you're a registered user, use your login credentials to sign in.
-   - Otherwise, create an account on the signup page.
-3. **Edit Your Profile**: Add your health details under the profile section.
-4. **Analyze Products**: Enter the product name in the chat section to get a health analysis and score.
+   - If you're a registered user , use your login credentials to sign in.
+   - Otherwise, you can register by creating an account on the signup page.
+3. **Edit Your Profile**:
+   - After logging in, you'll be redirected to the home page.
+   - Navigate to your profile and click on "Edit Profile" to add your health details.
+4. **Save Changes**:
+   - After entering your health information, save the details.
+   - Then, navigate back to the home page.
+5. **Product Health Analysis**:
+   - Click on "Chat" in the navbar.
+   - Enter the product name in the text input field to receive a health analysis.
+6. **Receive Your Personalized Analysis**:
+   - The model will take around 10-12 seconds to generate a personalized health analysis based on your profile.
 
-## Deployment
-
-You can access the app at [ConsumeWise](https://consumewiseai.pythonanywhere.com).
-
-## Future Scope
-
-- **Enhanced AI Accuracy**: Improving the AI’s ability to identify nutritional content and harmful ingredients.
-- **OCR Integration**: Adding a feature to scan product labels using Optical Character Recognition.
-- **Personalized Health Recommendations**: Tailored product suggestions based on the user's health goals and preferences.
-
----
-
-
+**Note**: For the best results, make sure to enter only the product name in the text input field. 
